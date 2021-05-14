@@ -1,6 +1,7 @@
 # Counting successes and failures
 
-We will start this exercise by doing something that by now should be very familiar.  We are going to write a function that generates a series of Bernoulli random variables.  Now, however, I want you to calculate the number of failures in these n trials as well as the number of successes.  
+We will start this exercise by doing something that by now should be very familiar.  We are going to write a function that generates a series of Bernoulli random variables.  Now, however, I want you to calculate the number of failures in these 
+n trials as well as the number of successes.  
 
 To complete the exercise you will need to do the following:
 

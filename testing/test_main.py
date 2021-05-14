@@ -28,7 +28,6 @@ class UnitTests(unittest.TestCase) :
             for i in range(1,9) :
                 p = i*0.1
                 inputs.append((nt,i*0.1,))
-                myvar1 = randomvar( nt*p, variance=nt*p*(1-p), vmin=0, vmax=nt, isinteger=True )
-                myvar2 = randomvar( nt*(1-p), variance=nt*p*(1-p), vmin=0, vmax=nt, isinteger=True )
-                variables.append((myvar1,myvar2,))
-        assert( check_func("repeated_trials", inputs, variables )
+                myvar1 = randomvar( [nt*p,nt*(1-p)], variance=[nt*p*(1-p),nt*p*(1-p)], vmin=[0,0], vmax=[nt,nt], isinteger=[True,True] )
+                variables.append(myvar1)
+        assert( check_func("repeated_trials", inputs, variables ) )
